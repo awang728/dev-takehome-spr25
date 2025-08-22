@@ -2,6 +2,7 @@
 
 import Button from "@/components/atoms/Button";
 import Input from "@/components/atoms/Input";
+import Dropdown from "@/components/atoms/Dropdown";
 import { useState } from "react";
 
 /**
@@ -41,7 +42,7 @@ export default function ItemRequestsPage() {
             ))}
           </ul>
         ) : (
-          "None :("
+          <Dropdown status="Completed"/>
         )}
       </div>
     </div>
